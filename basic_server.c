@@ -45,6 +45,7 @@ int main() {
               write(to_client, men, BUFFER_SIZE);
               printf("SUBSERVER[%d]-message-sent: %s\n",mypid, men);
           }
+          exit(0);
       }
   }
 }
