@@ -1,1 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/cc -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/forking_server.dir/basic_server.c.o CMakeFiles/forking_server.dir/client.c.o CMakeFiles/forking_server.dir/pipe_networking.c.o  -o forking_server 
