@@ -14,7 +14,7 @@
 #define HANDSHAKE_BUFFER_SIZE 10
 #define BUFFER_SIZE 1000
 
-int server_handshake(int *to_client);
+int server_handshake(int file_desc);
 
 int client_handshake(int *to_server);
 

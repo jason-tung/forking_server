@@ -1,8 +1,16 @@
 #include "pipe_networking.h"
 
+void sighand(int sig){
+  if (sig == SIGINT){
+    char * pvt_name = malloc(BUFFER_SIZE);
+    sprintf(pvt_name, "%d", getpid());
+    remove(pvt_name);
+    exit(0);
+  }
+}
 
 int main() {
-
+  //signal(SIGINT,sighand);
   int to_server;
   int from_server;
 
