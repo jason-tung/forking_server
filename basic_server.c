@@ -1,6 +1,6 @@
 #include "pipe_networking.h"
 
-void sighand(int sig){
+static void sighandler(int sig){
   if (sig == SIGINT){
     remove("WELL");
     exit(0);
@@ -15,7 +15,7 @@ char * secret_sauce(char * ingredients){
 }
 
 int main() {
-    signal(SIGINT,sighand);
+    signal(SIGINT,sighandler);
     //printf("%s", secret_sauce("heyyy"));
   int to_client;
   int from_client;
